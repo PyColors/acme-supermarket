@@ -1,38 +1,99 @@
-# ACME Supermarket
+# Isomorphic Basket 
 
-Create a solution for the ACME Supermarket problem.
+![N|Solid](http://rubix410.sketchpixy.com/imgs/app/homepage/isomorphic.png) 
 
-## Description of the problem
+Isomorphic React Basket App is a Server-Side Rendering application with All Best Practices.  
 
-ACME's quest for global domination has prompted us to open a supermarket – we sell only three products:
+#### 🔥 Isomorphic React App Boilerplate
+#### 🗂 Atomic Design Methodology
+#### 🧬 Atoms, molecules, organisms, templates, and pages
+#### 🎉 Server-Side Rendering
+#### 📁 Redux Saga
 
-    Product code        Name            Price
+### Tech
 
-    FR1                 Fruit tea       £ 3.11
-    SR1                 Strawberries    £ 5.00
-    CF1                 Coffee          £11.23
+Isomorphic React App uses a number of open source projects to work properly:
 
-Our CEO is a big fan of buy-one-get-one-free offers and of fruit tea. He wants us to add a rule to do this.
+* [React] - A JavaScript library for building user interfaces
+* [Redux] - Predictable state container for JavaScript apps
+* [redux-saga] - An alternative side effect model for Redux apps
+* [Jest] - Delightful JavaScript Testing
+* [Lodash] - A modern JavaScript utility library delivering modularity, performance, & extras
+* [Webpack] - Bundle assets scripts
+* [ESLint] - A fully pluggable tool for identifying and reporting on patterns in JavaScript
+* [Babel] - The compiler for writing next generation JavaScript
 
-The COO, though, likes low prices and wants people buying strawberries to get a price discount for bulk purchases. If you buy 3 or more strawberries, the price should drop to £4.50.
-Our check-out can scan items in any order, and because the CEO and COO change their minds often, it needs to be flexible regarding our pricing rules.
+And of course Isomorphic React App boilerplate itself is open source with a [public repository][dill] on GitHub.
 
-The interface to our basket looks like this (shown in JavaScript):
+## Installation
 
-    var basket = new Basket(pricingRules)
-    basket.add(item)
-    basket.add(item)
-    var price = basket.total()
+This app requires [Node.js](https://nodejs.org/) v8+ to run.
 
-Implement a basket system that fulfills these requirements in JavaScript.
+Install the dependencies.
 
-Test Data:
+```sh
+$ move in app
+$ npm install
+```
 
-    Basket: FR1, SR1, FR1, CF1
-    Total price expected: £19.34
+### Start the server
 
-    Basket: FR1, FR1
-    Total price expected: £3.11
+Start the local server on with livereload by webpack: `port:3000`
 
-    Basket: SR1, SR1, FR1, SR1
-    Total price expected: £16.61
+```sh
+$ npm start-dev
+```
+
+### Test
+
+Runs the test
+
+```sh
+$ npm test
+```
+
+Runs the test watcher in an interactive mode.
+
+```sh
+$ jest --watch or npm test --watch
+```
+### Test coverage
+
+Measuring code coverage of program.
+
+```sh
+$ npm test-coverage
+```
+
+### For production
+
+Runs in prod
+
+```sh
+$ npm start-prod
+```
+
+Builds JavaScript for production to the dist folder. 
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+```sh
+$ npm build
+```
+
+License
+----
+
+MIT
+
+
+[//]: # 
+   [dill]: <https://github.com/PyColors/isomorphic-boilerplate-redux-saga>
+   [React]: <https://github.com/facebook/react>
+   [Jest]: <https://github.com/facebook/jest>
+   [Webpack]: <https://github.com/webpack/webpack>
+   [Lodash]: <https://github.com/lodash/lodash>
+   [ESLint]: <https://github.com/eslint/eslint>
+   [Babel]: <https://babeljs.io/>
+   [redux-saga]: <https://github.com/redux-saga/redux-saga>
+   [redux]: <https://github.com/reduxjs/redux>
+
