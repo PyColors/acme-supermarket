@@ -5,7 +5,7 @@ const useServerRender = argv.ServerRender === 'true';
 
 const config = {
   http: {
-    port: process.env.PORT || 4040
+    port: process.env.PORT || 4080
   },
   useLiveData,
   useServerRender
